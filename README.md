@@ -18,7 +18,9 @@ Available addons
 [sale_order_internal_sale](sale_order_internal_sale/) | Simplifies internal invoicing process
 [sale_order_locking](sale_order_locking/) | Locks sale order after invoicing
 [sale_order_mandatory_taxes](sale_order_mandatory_taxes/) | Requires a tax for sale order lines before confirming
+[sale_order_stock_warning_disable](sale_order_stock_warning_disable/) | Disabled stock level warning for sale orders
 [sale_order_to_contract](sale_order_to_contract/) | Sale Order to Contract
 [sale_order_validity](sale_order_validity/) | Adds a validity date for sale orders
 [sale_setup_common_features](sale_setup_common_features/) | Sets up common sale features automatically
 [sale_simplification](sale_simplification/) | Sale Simplification
+
