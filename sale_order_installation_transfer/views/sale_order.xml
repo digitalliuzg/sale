@@ -1,0 +1,33 @@
+<openerp>
+	<data>
+
+		<record id="sale_order_view_tree" model="ir.ui.view">
+			<field name="name">sale.order.installation.transfer.sale.tree</field>
+			<field name="model">sale.order</field>
+			<field name="inherit_id" ref="sale.view_order_tree"/>
+			<field name="arch" type="xml">
+				<field name="state" position="before">
+					<field name="date_installation_transfer"/>
+				</field>
+			</field>
+		</record>
+
+		<record id="sale_order_view_search" model="ir.ui.view">
+			<field name="name">sale.order.installation.transfer.sale.tree</field>
+			<field name="model">sale.order</field>
+			<field name="inherit_id" ref="sale.view_sales_order_filter"/>
+			<field name="arch" type="xml">
+				<filter name="message_unread" position="after">
+					<filter name="transferred" string="Transferred" domain="[('date_installation_transfer', '!=', False)]"/>
+					<filter name="untransferred" string="Untransferred" domain="[('date_installation_transfer', '=', False)]"/>
+				</filter>
+			</field>
+		</record>
+
+		<act_window id="action_sale_order_transfer_wizard"
+				multi="True"
+				key2="client_action_multi" name="Transfer Sale Orders"
+				res_model="sale.order.transfer.wizard" src_model="sale.order"
+				view_mode="form" target="new" view_type="form" context="{}" />
+    </data>
+</openerp>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="ir_config_key_url" model="ir.config_parameter">
+            <field name="key">sale_order_installation_transfer.url</field>
+            <field name="value">-</field>
+        </record>
+        <record id="ir_config_key_port" model="ir.config_parameter">
+            <field name="key">sale_order_installation_transfer.port</field>
+            <field name="value">-</field>
+        </record>
+        <record id="ir_config_key_db" model="ir.config_parameter">
+            <field name="key">sale_order_installation_transfer.database</field>
+            <field name="value">-</field>
+        </record>
+        <record id="ir_config_key_username" model="ir.config_parameter">
+            <field name="key">sale_order_installation_transfer.username</field>
+            <field name="value">-</field>
+        </record>
+        <record id="ir_config_key_password" model="ir.config_parameter">
+            <field name="key">sale_order_installation_transfer.password</field>
+            <field name="value">-</field>
+        </record>
+        <record id="ir_config_key_customer_vat" model="ir.config_parameter">
+            <field name="key">sale_order_installation_transfer.customer_vat</field>
+            <field name="value">-</field>
+        </record>        
+    </data>
+</openerp>
