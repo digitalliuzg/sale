@@ -8,9 +8,10 @@
             <field name="arch" type="xml">
                 <xpath expr="//filter[@name='my_sale_orders_filter']" position="after">
                     <separator/>
-                    <filter string="Promised Delivery due within next 7 Days" domain="[('date_delivery_promised_start','&lt;=',((context_today()+relativedelta(weeks=0, days=7)).strftime('%Y-%m-%d'))),('date_delivery_promised_start','&gt;=',((context_today().strftime('%Y-%m-%d')))]"/>
+                    <filter string="Promised Delivery due within next 7 Days" domain="[('date_delivery_promised_start','&lt;=',((context_today()+relativedelta(weeks=0, days=7)).strftime('%Y-%m-%d 23:59:59'))),('date_delivery_promised_start','&gt;=',(context_today().strftime('%Y-%m-%d 00:00:00')))]"/>                    
                     <separator/>
-                    <filter string="Promised Delivery is Late" domain="[('date_delivery_promised_start','&lt;',((context_today().strftime('%Y-%m-%d')))]"/>
+                    <filter string="Promised Delivery is Late" domain="
+                    [('date_delivery_promised_start','&lt;',((context_today()).strftime('%Y-%m-%d 00:00:00')))]"/>
                     <separator/>
                     <filter string="Order is Confirmed but not Received" domain="[('state','=','finalization')]"/>
                     <separator/>
