@@ -16,8 +16,8 @@ class SaleOrder(models.Model):
         if vals['team_id'] == website_sales_id:
             vals['partner_invoice_id'] = \
                 self.env['res.partner'].browse(
-                    vals['partner_invoice_id']).
-                        commercial_partner_id.id
+                    vals['partner_invoice_id'])
+                        .commercial_partner_id.id
 
         res = super(SaleOrder, self).create(vals)
 
