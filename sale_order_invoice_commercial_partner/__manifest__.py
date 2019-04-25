@@ -31,6 +31,7 @@
     'installable': True,
     'depends': [
         'sale',
+        'website_sale',
     ],
     'data': [
         'views/sale_order.xml'
