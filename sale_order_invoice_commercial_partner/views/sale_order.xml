@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <template id="checkout" inherit_id="website_sale.checkout">
+        <xpath expr="//h3[contains(@class, 'page-header')]" position="replace">
+            <h3 class="page-header mt16">Your Address</h3>
+        </xpath>
+    </template>
+
+</odoo>
