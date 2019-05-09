@@ -2,6 +2,7 @@
 <odoo>
     <record id="product_product_comment" model="product.product">
         <field name="name">Comment</field>
+        <field name="default_code">comment</field>
         <field name="standard_price">0.0</field>
         <field name="list_price">0.0</field>
         <field name="sale_ok" eval="True"/>
