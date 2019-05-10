@@ -18,13 +18,13 @@ class SaleOrder(models.Model):
                             order.has_been_delivered = True
 
     @api.multi
-    def _value_search(self,operator,value):
-        recs = self.search([]).filtered(lambda x:x.has_been_delivered is False)
+    def _search_value(self, operator, value):
+        recs = self.search([]).filtered(lambda x: x.has_been_delivered is False)
         if recs:
-            return [('id','in',[x.id for x in recs])]
+            return [('id', 'in', [x.id for x in recs])]
 
     has_been_delivered = fields.Boolean(
         string='Delivered',
         compute=_get_picking_state,
-        search='_value_search'
+        search='_search_value'
         )
