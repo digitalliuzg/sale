@@ -19,7 +19,7 @@ class SaleOrder(models.Model):
 
     @api.multi
     def _search_has_been_delivered(self, operator, value):
-        recs = self.search([]).filtered( \
+        recs = self.search([]).filtered(
             lambda x: x.has_been_delivered is False)
         if recs:
             return [('id', 'in', [x.id for x in recs])]
