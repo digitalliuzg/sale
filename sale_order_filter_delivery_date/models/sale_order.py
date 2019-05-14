@@ -11,11 +11,13 @@ class SaleOrder(models.Model):
     @api.multi
     def _get_picking_state(self):
         for order in self:
-            if len(order.picking_ids) != 0:
-                for picking_id in order.picking_ids:
-                    for pick in picking_id:
-                        if pick.state == 'done':
-                            order.has_been_delivered = True
+            has_been_delivered = True
+
+            for picking_id in order.picking_ids:
+                for pick in picking_id:
+                    has_been_delivered = has_been_delivered and pick.state == 'done'
+
+            order.has_been_delivered = has_been_delivered
 
     @api.multi
     def _search_has_been_delivered(self, operator, value):
