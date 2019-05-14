@@ -15,7 +15,8 @@ class SaleOrder(models.Model):
 
             for picking_id in order.picking_ids:
                 for pick in picking_id:
-                    has_been_delivered = has_been_delivered and pick.state == 'done'
+                    has_been_delivered = has_been_delivered \
+                    and pick.state == 'done'
 
             order.has_been_delivered = has_been_delivered
 
