@@ -9,7 +9,8 @@ Delivery Date Filters to Sale Orders
 Filters Sale Orders that have Delivery dates 
 due within next seven days. This module also 
 adds a filter that filters sale orders with 
-late Delivery dates
+late Delivery dates & deliveries that are not 
+in Done-state. 
 
 Configuration
 =============

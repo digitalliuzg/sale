@@ -2,21 +2,21 @@
 <odoo>
 
     <record id="view_sales_order_filter" model="ir.ui.view">
-            <field name="name">sale.order.add.filters</field>
-            <field name="model">sale.order</field>
-            <field name="inherit_id" ref="sale.view_sales_order_filter"/>
-            <field name="arch" type="xml">
-                <xpath expr="//filter[@name='my_sale_orders_filter']" position="after">
-                    <separator/>
-                    <filter string="Promised Delivery due within next 7 Days" domain="[('date_delivery_promised_start','&lt;=',((context_today()+relativedelta(weeks=0, days=7)).strftime('%Y-%m-%d 23:59:59'))),('date_delivery_promised_start','&gt;=',(context_today().strftime('%Y-%m-%d 00:00:00')))]"/>                    
-                    <separator/>
-                    <filter string="Promised Delivery is Late" domain="
-                    [('date_delivery_promised_start','&lt;',((context_today()).strftime('%Y-%m-%d 00:00:00')))]"/>
-                    <separator/>
-                    <filter string="Order is Confirmed but not Received" domain="[('state','=','finalization')]"/>
-                    <separator/>
-                </xpath>
-            </field>
-        </record>
+        <field name="name">sale.order.add.filters</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_sales_order_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='my_sale_orders_filter']" position="after">
+                <separator/>
+                 <filter name="promised_delivery_seven_days" string="Promised Delivery due within next 7 Days" domain="[('date_delivery_promised_start','&lt;=',((context_today()+relativedelta(weeks=0, days=7)).strftime('%Y-%m-%d 23:59:59'))),('date_delivery_promised_start','&gt;=',(context_today().strftime('%Y-%m-%d 00:00:00')))]"/> 
+                <separator/>               
+                <filter name="promised_delivery_late" string="Promised Delivery is Late" domain="[('date_delivery_promised_start','&lt;',((context_today()).strftime('%Y-%m-%d 00:00:00'))),('has_been_delivered','=',False)]"/>
+                <separator/>
+                <filter name="order_is_not_received" string="Order is Confirmed but not Received" 
+                    domain="[('state','=','finalization')]"/> 
+                <separator/>
+            </xpath>
+        </field>
+    </record>
 
 </odoo>
