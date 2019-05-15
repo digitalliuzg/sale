@@ -20,10 +20,10 @@
 ##############################################################################
 
 {
-    'name': 'Show Linked Purchase Orders on Sale Orders',
-    'summary': 'Show Linked Purchase Orders on Sale Orders',
+    'name': 'Commercial Partner for Invoice Address',
+    'summary': 'Invoice Address is replaced with Commercial Partner',
     'version': '10.0.1.0.0',
-    'category': 'Purchases, Sales',
+    'category': 'Sales',
     'website': 'https://tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
@@ -31,9 +31,9 @@
     'installable': True,
     'depends': [
         'sale',
-        'purchase',
+        'website_sale',
     ],
     'data': [
-        'views/sale_order.xml',
+        'views/sale_order.xml'
     ],
 }
