@@ -33,6 +33,6 @@
         'sale',
     ],
     'data': [
-        'views/sale_views_filter.xml'
+        'views/sale_views.xml'
     ],
 }
