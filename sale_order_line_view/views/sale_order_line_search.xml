@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="view_sales_order_line_filter" model="ir.ui.view">
+        <field name="name">sale.order.line.select.extra.fields</field>
+        <field name="model">sale.order.line</field>
+        <field name="inherit_id" ref="sale.view_sales_order_line_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[last()]" position="inside">
+                <filter string="Customer" domain="[]" context="{'group_by':'partner_id'}"/>
+                <filter string="Destination" domain="[]" context="{'group_by':'destination_country_id'}"/>
+                <filter string="Order state" domain="[]" context="{'group_by':'state'}"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
