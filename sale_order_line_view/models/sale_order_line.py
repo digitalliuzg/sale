@@ -20,3 +20,16 @@ class SaleOrderLine(models.Model):
         related='order_id.partner_shipping_id.country_id',
         store=True,
     )
+
+    product_categ_id = fields.Many2one(
+        string='Category',
+        comodel_name='product.category',
+        related='product_id.categ_id',
+        store=True,
+    )
+
+    date_order = fields.Datetime(
+        string='Order date',
+        related='order_id.date_order',
+        store=True,
+    )
