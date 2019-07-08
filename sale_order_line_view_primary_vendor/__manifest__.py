@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    Copyright 2017 Tawasta OS Technologies
+#    Author: Oy Tawasta OS Technologies Ltd.
+#    Copyright 2019 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -10,27 +11,30 @@
 #
 #    This program is distributed in the hope that it will be useful,
 #    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 #    GNU Affero General Public License for more details.
 #
 #    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#    along with this program. If not, see http://www.gnu.org/licenses/agpl.html
 #
 ##############################################################################
+
 {
-    'name': 'Customer Contact for Sale Orders',
-    'category': 'Sales',
-    'version': '10.0.1.0.4',
-    'installable': True,
+    'name': 'Sale order line view: Primary vendor info',
+    'summary': 'Add primary vendor info to SO line view',
+    'category': 'Sale',
+    'version': '10.0.1.0.0',
+    'website': 'https://tawasta.fi',
+    'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
-    'author': 'Oy Tawasta OS Technologies Ltd.',
-    'website': 'http://www.tawasta.fi',
+    'application': False,
+    'installable': True,
     'depends': [
-        'res_partner_recursion',
-        'sale',
+        'product_primary_vendor_info',
+        'sale_order_line_view',
     ],
     'data': [
-        'views/account_invoice.xml',
-        'views/sale_order.xml',
+        'views/sale_order_line_search.xml',
+        'views/sale_order_line.xml',
     ],
 }
