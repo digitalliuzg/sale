@@ -22,6 +22,7 @@
     'category': 'Sales',
     'version': '10.0.1.0.4',
     'installable': True,
+    'license': 'AGPL-3',
     'author': 'Oy Tawasta OS Technologies Ltd.',
     'website': 'http://www.tawasta.fi',
     'depends': [
