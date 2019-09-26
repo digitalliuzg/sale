@@ -41,6 +41,9 @@ class PurchaseOrderWizard(models.TransientModel):
             initial_values, ['product_id']
         )
 
+        if not updated_values.get('order_id'):
+            updated_values['order_id'] = initial_values['order_id']
+
         # Price is mandatory, so set is as 0 in case no
         # supplier price was found
         if 'price_unit' not in updated_values:
