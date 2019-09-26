@@ -21,8 +21,7 @@ class PurchaseOrderWizard(models.TransientModel):
         )
 
         if not updated_values.get('partner_id'):
-            updated_values['partner_id'] = updated_values.get(
-                'commercial_partner_id')
+            updated_values['partner_id'] = initial_values['partner_id']
 
         return purchase_order_model.create(updated_values)
 
