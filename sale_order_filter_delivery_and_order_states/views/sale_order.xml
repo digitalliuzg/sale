@@ -8,9 +8,9 @@
         <field name="arch" type="xml">
             <xpath expr="//filter[@name='message_needaction']" position="after">
                 <separator/>
-                <filter name="all_delivered_or_partially"
-                    string="All/some products have been delivered"
-                    domain="[('delivery_status_partial_or_done','=',True)]"/>
+                <filter name="nothing_delivered_or_partially"
+                    string="Nothing Delivered or Partially Delivered"
+                    domain="[('delivery_status_not_done','=',True)]"/>
                 <separator/>
                 <filter name="purchase_order_open"
                     string="Purchase Orders to Confirm"
