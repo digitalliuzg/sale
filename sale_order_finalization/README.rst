@@ -2,19 +2,17 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-======================
-Sale Order Description
-======================
+=======================
+Sale Order Finalization
+=======================
 
-* Adds a description (an internal note) to Sale Order
+Adds a checkbox field for sales in finalization
+
 
 Usage
 =====
 \-
 
-Known issues / Roadmap
-======================
-* None
 
 Credits
 =======
@@ -22,7 +20,6 @@ Credits
 Contributors
 ------------
 * Jarmo Kortetjärvi <jarmo.kortetjarvi@tawasta.fi>
-* Timo Talvitie <timo.talvitie@tawasta.fi>
 
 Maintainer
 ----------

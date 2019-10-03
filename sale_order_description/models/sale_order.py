@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import models, fields
+from odoo import models, fields, api
 
 
 class SaleOrder(models.Model):
@@ -10,3 +10,11 @@ class SaleOrder(models.Model):
         string='Description',
         help='Internal notes'
     )
+
+    @api.multi
+    def _prepare_invoice(self):
+        vals = super(SaleOrder, self)._prepare_invoice()
+
+        vals['description'] = self.description
+
+        return vals

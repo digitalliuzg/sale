@@ -113,10 +113,9 @@ class SaleOrder(models.Model):
 
         return result
 
-    def _get_customer_info_msg(self, field_name, arg):
-        res = {}
-        for sale_order in self.browse():
+    def _get_customer_info_msg(self):
+        for record in self:
             selected_partner_id = sale_order.partner_id.id
             info_msg = self._read_customer_uptodate_info(selected_partner_id)
-            res[sale_order.id] = info_msg
+            record.partner_info_msg = info_msg
         return res

@@ -20,6 +20,9 @@ class PurchaseOrderWizard(models.TransientModel):
             initial_values, ['partner_id']
         )
 
+        if not updated_values.get('partner_id'):
+            updated_values['partner_id'] = initial_values['partner_id']
+
         return purchase_order_model.create(updated_values)
 
     def create_purchase_line(self, current_sale_line, purchase_order):
@@ -37,6 +40,9 @@ class PurchaseOrderWizard(models.TransientModel):
         updated_values = purchase_order_line_model.play_onchanges(
             initial_values, ['product_id']
         )
+
+        if not updated_values.get('order_id'):
+            updated_values['order_id'] = initial_values['order_id']
 
         # Price is mandatory, so set is as 0 in case no
         # supplier price was found

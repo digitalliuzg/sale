@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2017 Oy Tawasta OS Technologies Ltd. (http://www.tawasta.fi)
+#    Copyright 2019 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -20,29 +20,21 @@
 ##############################################################################
 
 {
-    'name': 'Sale Order to Purchase Order',
-    'summary': 'Button for creating a PO from SO, containing the same lines',
-    'version': '10.0.1.5.3',
-    'category': 'Sales',
-    'website': 'http://www.tawasta.fi',
+    'name': 'Filter SOs by delivery- and PO-states',
+    'summary': 'Filter SOs by delivery- and PO-states',
+    'version': '10.0.1.0.0',
+    'category': 'Sale',
+    'website': 'https://tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,
     'installable': True,
-    'external_dependencies': {
-        'python': [],
-        'bin': [],
-    },
     'depends': [
         'sale',
-        'purchase',
-        'onchange_helper',
+        'sale_order_delivery_status',
+        'sale_order_to_purchase_order',
     ],
     'data': [
-        'wizards/purchase_order_wizard.xml',
         'views/sale_order.xml',
-        'views/purchase_order.xml',
-    ],
-    'demo': [
     ],
 }

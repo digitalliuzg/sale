@@ -2,19 +2,23 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-======================
-Sale Order Description
-======================
+============================================================
+Disable SO line matching when invoicing the analytic account
+============================================================
 
-* Adds a description (an internal note) to Sale Order
+Disable SO line matching when invoicing the analytic account
+
+Configuration
+=============
+\-
 
 Usage
 =====
-\-
+\- 
 
 Known issues / Roadmap
 ======================
-* None
+\-
 
 Credits
 =======
@@ -22,13 +26,12 @@ Credits
 Contributors
 ------------
 * Jarmo Kortetjärvi <jarmo.kortetjarvi@tawasta.fi>
-* Timo Talvitie <timo.talvitie@tawasta.fi>
 
 Maintainer
 ----------
 
-.. image:: https://tawasta.fi/templates/tawastrap/images/logo.png
+.. image:: http://tawasta.fi/templates/tawastrap/images/logo.png
    :alt: Oy Tawasta OS Technologies Ltd.
-   :target: https://tawasta.fi/
+   :target: http://tawasta.fi/
 
 This module is maintained by Oy Tawasta OS Technologies Ltd.
