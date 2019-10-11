@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+	<record id="action_sale_order_xlsx" model="ir.actions.report.xml">
+		<field name="name">Export Sale Orders to Excel</field>
+		<field name="model">sale.order</field>
+		<field name="type">ir.actions.report.xml</field>
+		<field name="report_name">sale.order.xlsx</field>
+		<field name="report_type">xlsx</field>
+		<field name="auto" eval="False"/>
+	</record>
+
+	<record id="action_sale_order_xlsx_values" model="ir.values">
+		<field name="name">Export Sale Orders to Excel</field>
+		<field name="key2">client_action_multi</field>
+		<field name="value" eval="'ir.actions.report.xml,' +str(ref('action_sale_order_xlsx'))"/>
+		<field name="model">sale.order</field>
+	</record>
+</odoo>
