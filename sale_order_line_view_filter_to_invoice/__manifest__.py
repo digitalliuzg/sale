@@ -20,10 +20,10 @@
 ##############################################################################
 
 {
-    'name': 'Sale order line view',
-    'summary': 'Add a readonly SO line view for viewing SO line spesific info',
+    'name': 'Filter Sale Order lines to be invoiced',
+    'summary': 'Filter Sale Order lines to be invoiced',
+    'version': '10.0.1.0.0',
     'category': 'Sale',
-    'version': '10.0.1.0.1',
     'website': 'https://tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
@@ -31,10 +31,9 @@
     'installable': True,
     'depends': [
         'sale',
-        'sale_order_line_margin_percent',
+        'sale_order_line_view',
     ],
     'data': [
-        'views/sale_order_line_search.xml',
-        'views/sale_order_line.xml',
+        'views/sale_order.xml',
     ],
 }

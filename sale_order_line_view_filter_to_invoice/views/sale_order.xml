@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <record id="view_sales_order_line_filter" model="ir.ui.view">
+        <field name="name">sale.order.line.select.extra.fields.filter.invoice</field>
+        <field name="model">sale.order.line</field>
+        <field name="inherit_id" ref="sale_order_line_view.view_sales_order_line_filter" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='last_month']" position="after">
+                <separator/>
+                <filter string="Lines to be invoiced"
+                    name="lines_to_be_invoiced"
+                    domain="[('qty_to_invoice', '&gt;', 0)]"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
