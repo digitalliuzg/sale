@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo noupdate="0">
+	<record id="delivery_term_exw" model="delivery.term">
+            <field name="name">EXW - Ex Works</field>
+        </record>
+        <record id="delivery_term_fca" model="delivery.term">
+            <field name="name">FCA - Free Carrier</field>
+        </record>
+        <record id="delivery_term_fas" model="delivery.term">
+            <field name="name">FAS - Free Alongside Ship</field>
+        </record>
+        <record id="delivery_term_fob" model="delivery.term">
+            <field name="name">FOB - Free On Board</field>
+        </record>
+        <record id="delivery_term_cfr" model="delivery.term">
+            <field name="name">CFR - Cost And Freight</field>
+        </record>
+        <record id="delivery_term_cif" model="delivery.term">
+            <field name="name">CIF - Cost Insurance and Freight</field>
+        </record>
+        <record id="delivery_term_cpt" model="delivery.term">
+            <field name="name">CPT - Carriage Paid To</field>
+        </record>
+        <record id="delivery_term_dap" model="delivery.term">
+            <field name="name">DAP - Delivered At Place</field>
+        </record>
+        <record id="delivery_term_dat" model="delivery.term">
+            <field name="name">DAT - Delivered At Terminal</field>
+        </record>
+        <record id="delivery_term_ddp" model="delivery.term">
+            <field name="name">DDP - Delivered Duty Paid</field>
+        </record>
+        <record id="delivery_term_ddu" model="delivery.term">
+            <field name="name">DDU - Delivered Duty Unpaid</field>
+        </record>
+</odoo>
