@@ -34,7 +34,6 @@
         'sale_stock',
     ],
     'data': [
-        'data/terms_data.xml',
         'views/sale_order.xml',
     ],
 }
