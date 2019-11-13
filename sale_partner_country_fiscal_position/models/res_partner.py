@@ -29,11 +29,11 @@ class ResPartner(models.Model):
                 ], limit=1)
 
                 if int(vals['country_id']) == self.env['res.country'].search(
-                    [('id', '=', self.env.ref('base.fi').id)]).id:
+                        [('id', '=', self.env.ref('base.fi').id)]).id:
                     vals['property_account_position_id'] = self.env.ref(
                         account_position_with_vat.complete_name).id
                 elif int(vals['country_id']) in self.env.ref(
-                    'base.europe').country_ids.ids:
+                        'base.europe').country_ids.ids:
                     vals['property_account_position_id'] = self.env.ref(
                         account_position_y.complete_name).id
                 else:
