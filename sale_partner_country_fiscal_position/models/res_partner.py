@@ -10,7 +10,7 @@ class ResPartner(models.Model):
         """Creates a partner with a Fiscal Position based on country_id"""
         for vals in vals_list:
             if vals.get('country_id') \
-            and not vals.get('property_account_position_id'):
+                    and not vals.get('property_account_position_id'):
                 account_position_with_vat = self.env['ir.model.data'].search([
                     ('module', '=', 'l10n_fi_liikekirjuri'),
                     ('model', '=', 'account.fiscal.position'),
