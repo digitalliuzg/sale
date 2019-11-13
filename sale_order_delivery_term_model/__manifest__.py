@@ -35,5 +35,6 @@
     ],
     'data': [
         'views/sale_order.xml',
+        'security/ir.model.access.csv',
     ],
 }
