@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<odoo>
+<odoo noupdate="0">
     <data>
         <record id="sale_order_order_lines_analytic_account_required" model="ir.ui.view">
             <field name="name">sale.order.order.lines.analytic.account.required</field>
@@ -7,8 +7,8 @@
             <field name="inherit_id" ref="sale.view_order_form"/>
             <field name="arch" type="xml">
                 <!--<xpath expr="//field[@name='analytic_tag_ids']" position="attributes">-->
-                <xpath expr="//field[@groups='analytic.group_analytic_tags']" position="attributes">
-                    <attribute name="required">True</attribute>
+                    <xpath expr="//tree[@string='Sales Order Lines']//field[@name='analytic_tag_ids']" position="attributes">
+                    <attribute name="required">1</attribute>
                 </xpath>
             </field>
         </record>
