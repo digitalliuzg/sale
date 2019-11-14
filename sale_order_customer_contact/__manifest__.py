@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 ##############################################################################
 #
 #    Copyright 2017 Tawasta OS Technologies
@@ -23,7 +23,7 @@
     'version': '1.0.4',
     'installable': True,
     'author': 'Oy Tawasta OS Technologies Ltd.',
-    'website': 'http://www.tawasta.fi',
+    'website': 'https://tawasta.fi',
     'depends': [
         'res_partner_recursion',
         'sale',

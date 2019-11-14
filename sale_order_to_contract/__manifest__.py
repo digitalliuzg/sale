@@ -1,8 +1,8 @@
-# -*- coding: utf-8 -*-
+
 ##############################################################################
 #
 #    Author: Jarmo Kortetjärvi
-#    Copyright 2015 Oy Tawasta OS Technologies Ltd. (http://www.tawasta.fi)
+#    Copyright 2015 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -23,7 +23,7 @@
     'name': 'Sale Order to Contract',
     'version': '8.0.0.2.3',
     'category': 'Sales',
-    'website': 'http://www.tawasta.fi',
+    'website': 'https://tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,
