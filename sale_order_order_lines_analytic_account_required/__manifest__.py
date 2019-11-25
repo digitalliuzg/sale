@@ -1,7 +1,7 @@
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2019 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
+#    Copyright 2019- Oy Tawasta OS Technologies Ltd. (http://www.tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -19,19 +19,26 @@
 ##############################################################################
 
 {
-    'name': 'No Open Forms On Sales',
-    'summary': 'This module prevents to open forms on specified fields.',
+    'name': 'Sale Order Order Lines Analytic Account Required',
+    'summary': '',
     'version': '12.0.1.0.0',
     'category': 'Sales',
-    'website': 'https://tawasta.fi',
+    'website': 'http://www.tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,
     'installable': True,
+    'external_dependencies': {
+        'python': [],
+        'bin': [],
+    },
     'depends': [
         'sale',
+        'sale_product_analytic_tags',
     ],
     'data': [
-        'views/no_open_view.xml',
+        'views/sale_view_order_form.xml',
+    ],
+    'demo': [
     ],
 }

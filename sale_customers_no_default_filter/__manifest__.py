@@ -19,8 +19,8 @@
 ##############################################################################
 
 {
-    'name': 'No Open Forms On Sales',
-    'summary': 'This module prevents to open forms on specified fields.',
+    'name': 'Remove Customers default filter',
+    'summary': 'Remove Customers default filter',
     'version': '12.0.1.0.0',
     'category': 'Sales',
     'website': 'https://tawasta.fi',
@@ -32,6 +32,6 @@
         'sale',
     ],
     'data': [
-        'views/no_open_view.xml',
+        'data/ir_actions_act_window.xml',
     ],
 }
