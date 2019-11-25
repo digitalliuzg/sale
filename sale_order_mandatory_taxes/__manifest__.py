@@ -24,7 +24,7 @@
     'summary': 'Requires a tax for sale order lines before confirming',
     'version': '8.0.1.0.0',
     'category': 'Sales',
-    'website': 'https://tawasta.fi',
+    'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,

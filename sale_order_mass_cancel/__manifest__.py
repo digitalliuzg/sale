@@ -22,9 +22,9 @@
 {
     'name': 'Sale Orders - Mass cancel',
     'summary': 'Enables cancelling multiple sales at once',
-    'version': '1.1.0',
+    'version': '12.0.1.1.0',
     'category': 'Sales',
-    'website': 'https://tawasta.fi',
+    'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,

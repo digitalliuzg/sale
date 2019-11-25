@@ -22,9 +22,9 @@
 {
     'name': 'Refund sale order returns by default',
     'summary': 'Refund sale order returns by default',
-    'version': '1.1.1',
+    'version': '12.0.1.1.1',
     'category': 'Sales',
-    'website': 'https://tawasta.fi',
+    'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,

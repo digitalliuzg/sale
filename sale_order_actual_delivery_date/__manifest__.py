@@ -24,7 +24,7 @@
     'summary': 'Logs the date when all lines have been delivered',
     'version': '2.1.1',
     'category': 'Sales',
-    'website': 'https://tawasta.fi',
+    'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,

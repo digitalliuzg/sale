@@ -22,9 +22,9 @@
 {
     'name': 'Mark sale orders as invoiced with a button',
     'summary': 'Mark sale orders as invoiced with a button',
-    'version': '1.2.0',
+    'version': '12.0.1.2.0',
     'category': 'Sales',
-    'website': 'https://tawasta.fi',
+    'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,

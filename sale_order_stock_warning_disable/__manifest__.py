@@ -24,7 +24,7 @@
     'summary': 'No out-of-stock warning when adding products to SO lines',
     'version': '12.0.1.0.0',
     'category': 'Sales',
-    'website': 'https://tawasta.fi',
+    'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,

@@ -24,7 +24,7 @@
     'summary': 'Show the contact address below the field',
     'category': 'Sales',
     'version': '12.0.1.0.0',
-    'website': 'https://tawasta.fi',
+    'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,

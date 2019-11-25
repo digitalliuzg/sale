@@ -24,7 +24,7 @@
     'summary': 'Add weight on sale order and sale order lines',
     'category': 'Sale',
     'version': '2.1.0',
-    'website': 'https://tawasta.fi',
+    'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,

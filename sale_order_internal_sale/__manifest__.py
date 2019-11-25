@@ -24,7 +24,7 @@
     'summary': 'Simplifies internal invoicing process',
     'version': '12.0.1.0.0',
     'category': 'CRM',
-    'website': 'https://tawasta.fi',
+    'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,

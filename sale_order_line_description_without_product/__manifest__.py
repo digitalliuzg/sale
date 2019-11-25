@@ -22,9 +22,9 @@
 {
     'name': 'Sale order line description without product',
     'summary': 'Remove product and product code from default description',
-    'version': '1.4.0',
+    'version': '12.0.1.4.0',
     'category': 'Sales',
-    'website': 'https://tawasta.fi',
+    'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,

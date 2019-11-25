@@ -22,9 +22,9 @@
 {
     'name': 'Sale Order to Purchase Order - Date Extension',
     'summary': 'PO promised delivery based on vendor information',
-    'version': '1.0.1',
+    'version': '12.0.1.1.1',
     'category': 'Sales',
-    'website': 'https://tawasta.fi',
+    'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,

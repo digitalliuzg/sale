@@ -24,7 +24,7 @@
     'summary': 'Lock sale order after it state is fully invoiced',
     'version': '12.0.1.0.0',
     'category': 'Sale',
-    'website': 'https://tawasta.fi',
+    'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,

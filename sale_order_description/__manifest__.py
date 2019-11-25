@@ -22,9 +22,9 @@
 {
     'name': 'Sale Order Description',
     'summary': 'Adds a description (an internal note) to sale order',
-    'version': '1.0.1',
+    'version': '12.0.1.1.1',
     'category': 'Sales',
-    'website': 'https://tawasta.fi',
+    'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,

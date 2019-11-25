@@ -22,9 +22,9 @@
 {
     'name': 'Project stock location in sale order header',
     'summary': 'Adds analytic account stock location to SO header',
-    'version': '1.0.1',
+    'version': '12.0.1.1.1',
     'category': 'Sales',
-    'website': 'https://tawasta.fi',
+    'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,
