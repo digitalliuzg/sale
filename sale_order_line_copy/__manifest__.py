@@ -23,7 +23,7 @@
     'name': 'Sale order line copy',
     'summary': 'Sale order line copy',
     'category': 'Sale',
-    'version': '0.1.0',
+    'version': '12.0.0.1.0',
     'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',

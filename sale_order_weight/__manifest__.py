@@ -23,7 +23,7 @@
     'name': 'Weight on sale order and sale order lines',
     'summary': 'Add weight on sale order and sale order lines',
     'category': 'Sale',
-    'version': '2.1.0',
+    'version': '12.0.2.1.0',
     'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',

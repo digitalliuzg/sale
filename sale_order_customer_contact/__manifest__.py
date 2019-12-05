@@ -1,4 +1,3 @@
-
 ##############################################################################
 #
 #    Copyright 2017 Tawasta OS Technologies
@@ -22,7 +21,8 @@
     'category': 'Sales',
     'version': '12.0.1.0.4',
     'installable': True,
-    'author': 'Oy Tawasta OS Technologies Ltd.',
+    'author': 'Oy Tawasta Technologies Ltd.',
+    'license': 'AGPL-3',
     'website': 'https://github.com/Tawasta/sale',
     'depends': [
         'res_partner_recursion',

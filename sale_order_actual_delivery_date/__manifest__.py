@@ -22,7 +22,7 @@
 {
     'name': 'Sale Order Actual Delivery Date',
     'summary': 'Logs the date when all lines have been delivered',
-    'version': '2.1.1',
+    'version': '12.0.2.1.1',
     'category': 'Sales',
     'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',

@@ -25,7 +25,7 @@ class CrmLead(models.Model):
     pricelist_id = fields.Many2one(
         'product.pricelist',
         string='Pricelist',
-        compute='_get_pricelist',
+        compute='_compute_pricelist_id',
     )
 
     @api.multi
@@ -57,7 +57,7 @@ class CrmLead(models.Model):
                 record.order_id = False
 
     @api.multi
-    def _get_pricelist(self):
+    def _compute_pricelist_id(self):
         for record in self:
             if record.sale_number == 1:
                 record.pricelist_id = record.order_ids \

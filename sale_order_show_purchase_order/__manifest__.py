@@ -1,4 +1,3 @@
-
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
@@ -22,7 +21,7 @@
 {
     'name': 'Show Linked Purchase Orders on Sale Orders',
     'summary': 'Show Linked Purchase Orders on Sale Orders',
-    'version': '0.1.0',
+    'version': '12.0.1.0.0',
     'category': 'Purchases, Sales',
     'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
