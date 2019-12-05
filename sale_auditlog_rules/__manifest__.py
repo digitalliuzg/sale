@@ -21,7 +21,6 @@
 {
     'name': "Futural Log Rules - Sales",
     'summary': "Audit log rules for sales",
-    'description': "Log rules for Futural ERP Sale",
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'website': "https://tawasta.fi",

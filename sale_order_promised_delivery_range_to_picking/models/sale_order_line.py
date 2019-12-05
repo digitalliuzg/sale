@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 from odoo import models, api
 from datetime import datetime, timedelta
 from odoo.tools import DEFAULT_SERVER_DATE_FORMAT

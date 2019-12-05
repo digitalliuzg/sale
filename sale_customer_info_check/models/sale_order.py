@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 from odoo import models, fields, _
 from odoo.exceptions import ValidationError
 import datetime
@@ -8,8 +8,11 @@ class SaleOrder(models.Model):
 
     _inherit = 'sale.order'
 
-    partner_info_msg = fields.Char(compute='_get_customer_info_msg', size=256,
-                                   string="Customer info status")
+    partner_info_msg = fields.Char(
+        compute='_compute_partner_info_msg',
+        size=256,
+        string="Customer info status",
+    )
 
     ''' How old the customer info can be before it gets flagged '''
     _DAY_THRESHOLD = 90
@@ -113,7 +116,7 @@ class SaleOrder(models.Model):
 
         return result
 
-    def _get_customer_info_msg(self, field_name, arg):
+    def _compute_partner_info_msg(self, field_name, arg):
         res = {}
         for sale_order in self.browse():
             selected_partner_id = sale_order.partner_id.id

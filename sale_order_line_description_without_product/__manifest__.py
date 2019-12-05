@@ -1,8 +1,8 @@
-# -*- coding: utf-8 -*-
+
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2017 Oy Tawasta OS Technologies Ltd. (http://www.tawasta.fi)
+#    Copyright 2017 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -22,9 +22,9 @@
 {
     'name': 'Sale order line description without product',
     'summary': 'Remove product and product code from default description',
-    'version': '1.4.0',
+    'version': '12.0.1.4.0',
     'category': 'Sales',
-    'website': 'http://www.tawasta.fi',
+    'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,

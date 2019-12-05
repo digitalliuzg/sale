@@ -1,8 +1,7 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2018 Oy Tawasta OS Technologies Ltd. (http://www.tawasta.fi)
+#    Copyright 2019 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -20,11 +19,11 @@
 ##############################################################################
 
 {
-    'name': 'Allow using comment lines in sale orders',
-    'summary': 'Allow using comment lines in sale orders',
-    'category': 'Sale',
-    'version': '1.2.0',
-    'website': 'http://www.tawasta.fi',
+    'name': 'Remove Customers default filter',
+    'summary': 'Remove Customers default filter',
+    'version': '12.0.1.0.0',
+    'category': 'Sales',
+    'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,
@@ -33,6 +32,6 @@
         'sale',
     ],
     'data': [
-        'data/product_product.xml',
+        'data/ir_actions_act_window.xml',
     ],
 }

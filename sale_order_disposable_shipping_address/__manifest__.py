@@ -1,8 +1,8 @@
-# -*- coding: utf-8 -*-
+
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2018 Oy Tawasta OS Technologies Ltd. (http://www.tawasta.fi)
+#    Copyright 2018 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -23,8 +23,8 @@
     'name': 'Disposable sale order shipping addresses',
     'summary': 'Sale order shipping addresses can be deactivated after use',
     'category': 'Sale',
-    'version': '1.2.0',
-    'website': 'http://www.tawasta.fi',
+    'version': '12.0.1.2.0',
+    'website': 'https://github.com/Tawasta/sale',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,
