@@ -11,8 +11,8 @@ class SaleOrder(models.Model):
     partner_info_msg = fields.Char(
         compute='_compute_partner_info_msg',
         size=256,
-        string="Customer info status"
-   )
+        string="Customer info status",
+    )
 
     ''' How old the customer info can be before it gets flagged '''
     _DAY_THRESHOLD = 90
