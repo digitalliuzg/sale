@@ -24,12 +24,12 @@ class SaleOrder(models.Model):
 
             if start and end:
 
-                length = \
+                duration = \
                     datetime.strptime(end, DEFAULT_SERVER_DATE_FORMAT) -\
                     datetime.strptime(start, DEFAULT_SERVER_DATE_FORMAT)
 
-                days = length.days % 7
-                weeks = length.days / 7
+                days = duration.days % 7
+                weeks = duration.days / 7
 
                 record.date_delivery_promised_days = days
                 record.date_delivery_promised_weeks = weeks
