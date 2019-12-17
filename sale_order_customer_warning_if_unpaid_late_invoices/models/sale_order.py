@@ -25,7 +25,8 @@ class SaleOrder(models.Model):
         if len(invoices) == 1:
             message = "%s" % _("Customer has one late unpaid invoice.")
         else:
-            message = "%s" % _("Customer has %s late unpaid invoices.") % len(invoices)
+            message = "%s" % _(
+                "Customer has %s late unpaid invoices.") % len(invoices)
 
         warning = {
             'title': title,
