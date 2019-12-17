@@ -11,21 +11,21 @@ class SaleOrder(models.Model):
 
     @api.onchange('partner_id')
     def onchange_partner_id_warning(self):
-
         res = super(SaleOrder, self).onchange_partner_id_warning()
-
         warning = {}
-
-        title = _("Warning for %s") % self.partner_id.name
-        message = "%s" % _("Customer has late unpaid invoice(s).")
-
         today = datetime.now().date()
+        title = _("Warning for %s") % self.partner_id.name
 
         invoices = self.partner_id.invoice_ids.search([
             ('state', '!=', 'paid'),
             ('date_due', '<', today),
             ('partner_id', '=', self.partner_id.id)
         ])
+
+        if len(invoices) == 1:
+            message = "%s" % _("Customer has one late unpaid invoice.")
+        else:
+            message = "%s" % _("Customer has %s late unpaid invoices.") % len(invoices)
 
         warning = {
             'title': title,
