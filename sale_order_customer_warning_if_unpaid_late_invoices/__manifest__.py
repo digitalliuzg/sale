@@ -22,7 +22,7 @@
 {
     'name': 'Warning if Customer has Unpaid & Late Invoices',
     'summary': 'Warning if Customer has Unpaid & Late Invoices',
-    'version': '10.0.1.0.0',
+    'version': '10.0.1.0.1',
     'category': 'Sales',
     'website': 'https://tawasta.fi',
     'author': 'Oy Tawasta OS Technologies Ltd.',

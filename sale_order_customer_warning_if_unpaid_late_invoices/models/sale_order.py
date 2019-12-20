@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-
-
 from odoo import api, models, _
 from datetime import datetime
 
@@ -12,12 +10,11 @@ class SaleOrder(models.Model):
     @api.onchange('partner_id')
     def onchange_partner_id_warning(self):
         res = super(SaleOrder, self).onchange_partner_id_warning()
-        warning = {}
         today = datetime.now().date()
         title = _("Warning for %s") % self.partner_id.name
 
         invoices = self.partner_id.invoice_ids.search([
-            ('state', '!=', 'paid'),
+            ('state', '=', 'open'),
             ('date_due', '<', today),
             ('partner_id', '=', self.partner_id.id)
         ])
