@@ -30,9 +30,10 @@
     'installable': True,
     'version': '12.0.1.0.0',
     'depends': [
-        'sale',
+        'sale_management',
     ],
     'data': [
+        'views/sale_view_order_form.xml',
     ],
     'demo': [],
 }
