@@ -19,7 +19,7 @@
 ##############################################################################
 
 {
-    'name': "Futural Log Rules - Sales",
+    'name': "Audit Log Rules - Sales",
     'summary': "Audit log rules for sales",
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
