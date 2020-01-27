@@ -54,7 +54,7 @@ class SaleOrder(models.Model):
     # 6. CRUD methods
     @api.multi
     def write(self, vals):
-        super(SaleOrder, self).write(vals)
+        res = super(SaleOrder, self).write(vals)
 
         for record in self:
             if record.project_id and record.internal_sale:
@@ -62,6 +62,8 @@ class SaleOrder(models.Model):
 
                 if not record.project_id.id == analytic.id:
                     record.project_id.parent_project_id = analytic.id
+
+        return res
 
     # 7. Action methods
 

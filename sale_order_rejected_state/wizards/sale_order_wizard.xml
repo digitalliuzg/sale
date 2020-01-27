@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>>
+    <record id="sale_order_wizard_reject" model="ir.ui.view">
+        <field name="name">sale.order.wizard.reject.form</field>
+        <field name="model">sale.order.wizard.reject</field>
+        <field name="arch" type="xml">
+            <form id="sale_order_rejection_form">
+                <div id="sale_order_rejection">
+                    <p>Elaborate on the reason for rejecting this sale order</p>
+                    <group id="rejection_group">
+                        <field name="reason_for_rejection"/>
+                    </group>
+                </div>
+                <footer id="sale_order_rejection_footer">
+                    <button type="object" name="update_rejection_reason"
+                            string="Reject this order" class="oe_highlight"/>
+                    <button special="cancel" string="Cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_reject_wizard" model="ir.actions.act_window">
+        <field name="name">Reject Sale Order</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sale.order.wizard.reject</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>
