@@ -30,18 +30,22 @@ class SaleOrder(models.Model):
         return super(SaleOrder, self).action_draft()
 
     @api.model
-    def fields_view_get(self, view_id=None, view_type=False, toolbar=False,
+    def fields_view_get(self, view_id=None, view_type='form', toolbar=False,
                         submenu=False):
-        context = self._context
         res = super(SaleOrder, self).fields_view_get(view_id=view_id,
                                                      view_type=view_type,
                                                      toolbar=toolbar,
                                                      submenu=submenu)
 
-        if context.get('active_id') and \
+        if view_type in ['search', 'tree'] or not view_id:
+            return res
+
+        context = self._context or {}
+
+        if context.get('active_id', False) and \
                 self.browse(context.get('active_id')).state == 'rejected':
-            doc = etree.XML(res['arch'])
             if view_type == 'form':
+                doc = etree.XML(res['arch'])
                 for node in doc.xpath("//field"):
                     node.set('readonly', '1')
                     node.set('modifiers', simplejson.dumps({"readonly": True}))
